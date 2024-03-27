@@ -9,14 +9,14 @@ import { getDatabase } from "firebase/database"
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAb2V8817SYfcdz8Xb9f6e2U34UX67ubTo",
-  authDomain: "daybuddy-6b879.firebaseapp.com",
-  databaseURL: "https://daybuddy-6b879-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "daybuddy-6b879",
-  storageBucket: "daybuddy-6b879.appspot.com",
-  messagingSenderId: "393458408143",
-  appId: "1:393458408143:web:002da3a958bedad8e175ba",
-  measurementId: "G-N3X2BL6N77"
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  databaseURL: process.env.DATABASE_URL,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
